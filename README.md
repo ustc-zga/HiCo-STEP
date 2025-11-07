@@ -7,9 +7,8 @@ We build this project by Python 3.9.19 with the following packages:
 einops==0.6.0
 numpy==1.24.1
 omegaconf==2.3.0
-scipy==1.10.0
-torch==1.13.1
-
+scipy==1.9.1
+torch==2.1.0
 
 ```
 pip install -r requirements.txt
