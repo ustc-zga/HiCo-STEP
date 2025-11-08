@@ -99,7 +99,7 @@ def get_sample_indices(data_sequence, num_of_weeks, num_of_days, num_of_hours,
     if num_of_hours > 0:
         hour_indices = search_data(data_sequence.shape[0], num_of_hours,
                                    label_start_idx, num_for_predict,
-                                   1, points_per_hour=6)
+                                   1, points_per_hour)
         if not hour_indices:
             return None, None, None, None
 
@@ -243,3 +243,4 @@ if __name__ == "__main__":
     else:
         os.makedirs(args.output_dir)
     generate_train_val_test(args)
+
