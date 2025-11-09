@@ -227,8 +227,8 @@ def generate_train_val_test(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output_dir", type=str, default="HiCo-STEP_v1/data/XiAn_City", help="Output directory.")
-    parser.add_argument("--traffic_df_filename", type=str, default="HiCo-STEP_v1/data/xianCO_12.npy", help="Raw traffic readings.",)
+    parser.add_argument("--output_dir", type=str, default="HiCo-STEP-main/data/XiAn_City", help="Output directory.")
+    parser.add_argument("--traffic_df_filename", type=str, default="HiCo-STEP-main/data/xianCO_12.npy", help="Raw traffic readings.",)
     parser.add_argument("--dow", action='store_true',)
     parser.add_argument("--num_of_weeks", type=int, default=0,help="none")
     parser.add_argument("--num_of_days", type=int, default=2)
@@ -243,4 +243,5 @@ if __name__ == "__main__":
     else:
         os.makedirs(args.output_dir)
     generate_train_val_test(args)
+
 
