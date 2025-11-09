@@ -1,6 +1,6 @@
 ssh:
   num_nodes: 308
-  group_nodes: 30
+  group_nodes: 50
   batch_size: 16
   in_dim: 1
   in_dim_cluster: 2
