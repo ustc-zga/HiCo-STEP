@@ -72,7 +72,7 @@ class Model(nn.Module):
         adj_mx1=torch.FloatTensor(adj_mx1).to(self.device)
         adj1_aug=aug_edge(s_sim_mx,adj1,percent=0.1)
         
-        x_aug=aug_node(t_sim_mx,x, percent=0.001)
+        x_aug=aug_node(t_sim_mx,x, percent=0.01)
         
         x_cluster,adj2,s_loss,A,z1= self.SCconv(x,x_aug,adj1,adj1_aug)
        
